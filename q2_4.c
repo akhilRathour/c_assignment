@@ -24,7 +24,7 @@ int main() {
         min_num = c;
     }
     
-    // Compare d with max and min
+  
     if (d > max_num) {
         max_num = d;
     } else if (d < min_num) {
