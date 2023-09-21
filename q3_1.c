@@ -20,7 +20,12 @@ int main()
     int a, f;
     scanf("%d", &a);
     f = factorial(a);
-    printf("the value of %d! is %d\n", a, f);
+ 
+    if (a< 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        printf("Factorial of %d! is %d\n", a, f);
+    }
 
     return 0;
 }
