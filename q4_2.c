@@ -9,14 +9,7 @@
          sum+=j;
     }
 
-    /*
-    while(n !=0){
-        
-        int j=n%10;
-sum +=j;
-n=n/10;
-    }
-    */
+  
    printf("%d",sum);
 
 
