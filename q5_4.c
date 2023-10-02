@@ -94,7 +94,7 @@ int days_in_month(int month, int year)
     {
         return 28;
     }
-    else if (month % 2 == 0)
+    else if (month % 2 == 0  &&month !=8)
     {
         return 30;
     }
