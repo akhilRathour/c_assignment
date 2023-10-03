@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c, d;
-    printf("Enter four numbers: ");
-    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int a, b, c;
+    printf("Enter 3 numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
     
     int max_num, min_num;
     
@@ -25,11 +25,7 @@ int main() {
     }
     
   
-    if (d > max_num) {
-        max_num = d;
-    } else if (d < min_num) {
-        min_num = d;
-    }
+    
     
     printf("Maximum number: %d\n", max_num);
     printf("Minimum number: %d\n", min_num);
