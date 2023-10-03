@@ -1,57 +1,38 @@
-#include <stdio.h>
-void min(int a, int b, int c, int d)
-{
-    if (a < b && a < c && a<d)
-    {
-        printf("min is a\n");
-    }
-    else if (b < c && b < a && b<d)
-    {
-      printf("min is b\n");
-    }
-    else if (d < c && d < a && d<b)
-    {
-        printf("min is d\n");
-    }
-    else if (a == b == c == d)
-    {
-        printf("all are equal\n");
-    }
-    else
-    {
-       printf("min is c\n");
-    }
-}
-void max(int a, int b, int c, int d)
-{
-    if (a > b && a > c && a>d)
-    {
-        printf("a is greatest\n");
-    }
-    else if (b > c && b > a && b>d)
-    {
-        printf("b is greatest\n");
-    }
-    else if (d > c && d > a && d>b)
-    {
-        printf("b is greatest\n");
-    }
-    else if (a == b == c == d)
-    {
-        printf("all are equal\n");
-    }
-    else
-    {
-        printf("c is greatest\n");
-    }
-}
-    int main()
-    {
-        int a, b, c, d;
-        printf("enter 4 numbers\n");
-        scanf("%d %d %d %d", &a, &b, &c, &d);
-        max(a, b, c, d);
-        min(a,b,c,d);
+ #include <stdio.h>
 
-        return 0;
+int main() {
+    int a, b, c, d;
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    
+    int max_num, min_num;
+    
+   
+    max_num = min_num = a;
+    
+
+    if (b > max_num) {
+        max_num = b;
+    } else if (b < min_num) {
+        min_num = b;
     }
+    
+   
+    if (c > max_num) {
+        max_num = c;
+    } else if (c < min_num) {
+        min_num = c;
+    }
+    
+  
+    if (d > max_num) {
+        max_num = d;
+    } else if (d < min_num) {
+        min_num = d;
+    }
+    
+    printf("Maximum number: %d\n", max_num);
+    printf("Minimum number: %d\n", min_num);
+    
+    return 0;
+}
